@@ -1,0 +1,344 @@
+/*******to do *************/
+/*
+Alphabetic order
+Elements
+Classes
+IDS
+*/
+
+/*****************navbar style**********************/
+#navbar 
+{
+  font-size: 20px;
+  background: #222;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.menu-item, .toggle, .logo
+{
+  padding: 10px;
+}
+
+.menu-item > a , .toggle > a, .logo > a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.menu
+{   
+  list-style-type: none;
+}
+
+.logo
+{
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.menu-item a:hover, .toggle a:hover
+{
+  color: #B861FF;
+ 
+}
+
+/***************** end of navbar style**********************/
+
+/******************* mobile menu *****************************/
+.menu 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#navbar
+{
+  width: 100%;
+}
+.menu li a 
+{
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle 
+{
+  order: 1;
+  font-size: 20px;
+  
+}
+
+.menu-item 
+{
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .menu-item
+{
+
+  display: block;
+
+}
+
+
+
+/*******************  end of mobile menu *****************************/
+
+
+
+body
+{
+    margin:0;
+    font-family: 'Athiti', sans-serif;
+    background-image: linear-gradient(to left, #51555C, #293139); 
+}
+
+h1, h2
+  {
+    text-align: center;
+  }
+
+#navbar
+{
+    border: 1px solid rgb(255, 255, 255); /*remove after finished*/
+    display: inline-flex;
+
+}
+
+.section
+{
+   
+    border-style: solid;
+    border-color: white;
+    position: relative;
+    color: rgb(234, 230, 230);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+#hero-section > p
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+
+
+   
+}
+
+#about > p
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#languages > p
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+h1
+{
+
+    font-size: 5rem;
+    margin: 50px auto 0 auto;
+  
+    color: #B861FF;
+    text-transform: uppercase;
+ }
+
+  h2
+  {
+  
+    font-size: 3rem;
+    color: #B861FF;
+    font-weight: normal;
+    }
+
+    .serviceIcon
+    {
+      width: 50px;
+      float:left;
+      margin-right: 30px;
+      margin-top: 20px;
+    }
+
+    .card
+    {
+      border-color: #B861FF;
+      border-style: solid;
+      border-width: 2px;
+     /* padding-top: 10px;*/
+      padding-right: 5%;
+      padding-bottom: 20px ;
+      padding-left: 5%;
+      width: 40%;
+      margin:50px auto 50px auto;
+      text-align: left;
+      line-height: 1.5;
+      border-radius: 10px;
+    }
+
+#services, #languages, #about, #contact
+{
+  padding-top: 30px;
+}
+
+
+    #lang-container
+    {
+      display: flex;
+      overflow: auto;
+      flex-flow: row wrap;
+      padding: 5% 10% 5% 10%;
+      width: 50%;
+      margin:0% auto 0% auto;
+      
+      
+    }
+
+    .language
+    {
+      margin:6px;
+      border: solid 1px #e7e7e7;
+      width: 200px;
+      border-radius: 3px;
+      background: #5f5e62;
+      padding: 10px 10px;
+      text-align: left;
+      font-size: 1.1em;
+
+    }
+   
+    .contact-button
+    {
+      background: #B861FF;
+      background-image: linear-gradient(top,#7A76FF , #F44CFF);
+      background-image: linear-gradient(to bottom, #7A76FF, #F44CFF);
+      border-radius: 10px;
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+      padding: 6px 20px 6px 20px;
+      text-decoration: none;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  
+    .contact-button:hover 
+    {
+      background: #9978d6;
+      background-image: linear-gradient(top, #a13ad1, #8565bf);
+      background-image: linear-gradient(to bottom, #9978d6, #8565bf);
+      text-decoration: none;
+    }
+
+.social-link
+{
+  color:#B861FF;
+  font-size: larger;
+  
+
+}
+
+
+    /***********************        FONTS           **************************************/
+    .athiti-extralight {
+        font-family: "Athiti", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .athiti-light {
+        font-family: "Athiti", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .athiti-regular {
+        font-family: "Athiti", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .athiti-medium {
+        font-family: "Athiti", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .athiti-semibold {
+        font-family: "Athiti", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .athiti-bold {
+        font-family: "Athiti", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+
+/*
+#intro
+{
+    background-color:#FFC7C2;
+    padding: 80px;
+    text-align: center;
+}
+
+
+#services
+{
+    background-color:#FCD19C;
+}
+
+#contact-us
+{
+    background-color:#BDE3FF;
+}
+
+#footer
+{
+    background-color:#E6E6E6;
+}
+
+#logo
+{
+    height: 150px;
+}
+
+
+#img1
+{
+    height: 400px;
+    
+
+}
+
+#img2
+{
+    height: 300px;
+    
+
+}
+
+*/
+
