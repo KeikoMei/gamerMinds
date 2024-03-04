@@ -10,10 +10,16 @@ IDS
 #navbar 
 {
   font-size: 20px;
-  background: #222;
+  background: black;
   padding: 0 15px;
   box-sizing: border-box;
   margin: 0;
+
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;*/
+ 
 }
 
 .menu-item, .toggle, .logo
@@ -39,7 +45,8 @@ IDS
 }
 .logo img
 {
-  width: 400px;
+  width: 300px;
+
   
 }
 
@@ -58,7 +65,7 @@ IDS
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
+ 
 }
 
 #navbar
@@ -150,17 +157,18 @@ h1, h2
 {
     border: 1px solid rgb(255, 255, 255); /*remove after finished*/
     display: inline-flex;
+  
 
 }
 
 .section
 {
    
-    border-style: solid;
-    border-color: white;
+   /* border-style: solid;
+    border-color: white;*/
     position: relative;
     color: rgb(234, 230, 230);
-    padding-top: 80px;
+    padding-top: 45px;
     padding-bottom: 100px;
     text-align: center;
 }
@@ -170,9 +178,11 @@ h1, h2
 {
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 5%;
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
+   
  
 }
 
@@ -195,19 +205,26 @@ h1, h2
 h1
 {
 
-    font-size: 5rem;
+    font-size: 7rem;
     margin: 50px auto 0 auto;
-  
+    font-family: "Montserrat", sans-serif;
     color: #B861FF;
     text-transform: uppercase;
  }
+
+ #hero-section > h2
+ {
+  font-family: "Montserrat", sans-serif;
+   
+ }
+
+
 
   h2
   {
   
     font-size: 3rem;
-    color: #B861FF;
-    font-weight: normal;
+        font-weight: normal;
     }
 
     .serviceIcon
@@ -264,27 +281,29 @@ h1
 
     }
    
-    .contact-button
+    .button
     {
-      background: #B861FF;
-      background-image: linear-gradient(top,#7A76FF , #F44CFF);
-      background-image: linear-gradient(to bottom, #7A76FF, #F44CFF);
+      border: #B861FF;
+      border-style: solid;
+      /*background-image: linear-gradient(top,#7A76FF , #F44CFF);
+      background-image: linear-gradient(to bottom, #7A76FF, #F44CFF);*/
       border-radius: 10px;
-      color: white;
+            color: white;
       font-size: 25px;
       font-weight: 500;
       padding: 6px 20px 6px 20px;
       text-decoration: none;
       margin-top: 50px;
       margin-bottom: 20px;
+      margin-left:20px;
     }
   
-    .contact-button:hover 
+    .button:hover 
     {
-      background: #9978d6;
-      background-image: linear-gradient(top, #a13ad1, #8565bf);
+      background: #B861FF;
+     /* background-image: linear-gradient(top, #a13ad1, #8565bf);
       background-image: linear-gradient(to bottom, #9978d6, #8565bf);
-      text-decoration: none;
+      */text-decoration: none;
     }
 
 .social-link
