@@ -145,7 +145,16 @@ body
 {
     margin:0;
     font-family: 'Athiti', sans-serif;
-    background-image: linear-gradient(to left, #51555C, #293139); 
+   /* background-image: linear-gradient(to left, #51555C, #293139); */
+   background: #1D1E22; /* Old browsers */
+   background: -moz-linear-gradient(0deg,  #1D1E22 50%, #2A1D36 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#2A1D36), color-stop(100%,#2A1D36)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* IE10+ */
+   background: linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##1D1E22', endColorstr='#2A1D36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   background-attachment: fixed;
 }
 
 h1, h2
@@ -184,6 +193,24 @@ h1, h2
     font-weight: 600;
    
  
+}
+
+#hero-section
+{
+ 
+ 
+  
+}
+
+#canvas
+{
+	height:100%; 
+	width:100%; 
+	margin:0px;
+  overflow: hidden;
+  
+	
+	
 }
 
 #about > p

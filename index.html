@@ -4,19 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gamer Minds</title>
+
+        <!-- styles -->
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="./canvas-styles.css">
+        
+        <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./assets/images/logos/SVG/Logo.svg">
     </head>
     
     <body>
- 
+        <div id="canvas"><canvas id="projector"></canvas></div>
+        
         <nav id="navbar">
 
             <ul class="menu">
@@ -43,18 +50,20 @@
         - background canvas
         - Call to action (contact button)
 
-        
+       
         
         -->
-
+        
+        
+      
         <div id="hero-section" class="section">
-
+                     
             <h1>Mind your game</h1>
             <h2>Take your game to the next level</h2>
             <p>Nerf QTE fps OP Bullet Hell Nintendo 3DS campaign cutscene VAC rubber banding Wombo Combo XP. Fatality RNG Dragon Ball Puzzle Game level design jrpg analog control save point Tetris.</p>
             <a class="button" href="mailto:info@gamer-minds.com">CONTACT US</a>
             <a class="button" href="#about">ABOUT US</a>
-
+            
         </div>
 
         <div id="services" class="section">
@@ -169,7 +178,7 @@
                 <h2>Get in touch</h2>
                 <h3>Nintendo Switch aiming down sights</h3>
                 <p>Whale cheat JRPG Pac-Man 3d graphics Halo AFK turn-based quickscope Camping/Active Camping Tekken.</p>
-                <a class="contact-button" href="mailto:info@gamer-minds.com">CONTACT US</a>
+                <a class="button" href="mailto:info@gamer-minds.com">CONTACT US</a>
                 <h3>Or find us in our social media channels</h3>
                 
                 <a class="social-link" href="https://www.linkedin.com/company/gamer-minds">LinkedIn</a>
@@ -187,9 +196,14 @@
 
 
 
+<!-------------------------- Javascript------------------------------------>
 
+    <!-- Behaviour -->
+    <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-
+    <!-- Canvas -->
+    <script src='https://code.createjs.com/easeljs-0.7.1.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script type="text/javascript"  src='./canvas.js'></script>
     </body>
 </html>
