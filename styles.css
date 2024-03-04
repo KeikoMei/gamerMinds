@@ -35,6 +35,12 @@ IDS
 .logo
 {
   padding: 7.5px 10px 7.5px 0;
+  
+}
+.logo img
+{
+  width: 400px;
+  
 }
 
 .menu-item a:hover, .toggle a:hover
@@ -93,6 +99,41 @@ IDS
 
 
 
+/************************ desktop menu *******************************/
+@media all and (min-width: 960px) 
+{
+  .menu 
+  {
+      align-items: flex-start;     
+      flex-wrap: nowrap;
+      background: none;
+  }
+
+  .logo 
+  {
+      order: 0;
+  }
+
+  .menu-item 
+  {
+
+      order: 1;
+      position: relative;
+      display: block; 
+      width: auto;
+  }
+
+  .toggle
+  {
+      display: none;
+  }
+}
+
+
+
+/************************   end of desktop menu  *************************/
+
+
 body
 {
     margin:0;
@@ -132,9 +173,7 @@ h1, h2
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
-
-
-   
+ 
 }
 
 #about > p
@@ -195,11 +234,10 @@ h1
       border-radius: 10px;
     }
 
-#services, #languages, #about, #contact
-{
-  padding-top: 30px;
-}
-
+  #services, #languages, #about, #contact
+  {
+    padding-top: 30px;
+  }
 
     #lang-container
     {
