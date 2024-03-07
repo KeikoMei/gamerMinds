@@ -9,23 +9,32 @@ IDS
 /*****************navbar style**********************/
 #navbar 
 {
-  font-size: 20px;
+  
   background: black;
-  padding: 0 15px;
+  padding: 0;
   box-sizing: border-box;
   margin: 0;
+  position: fixed;
+  top: 0; 
+  z-index:1;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.5em;
+  
 
 }
+
 
 .menu-item, .toggle, .logo
 {
-  padding: 10px;
+  padding: 5px;
 }
 
-.menu-item > a , .toggle > a, .logo > a
+.menu-item > a , .toggle > a
 {
   color: white;
   text-decoration: none;
+  
 }
 
 .menu
@@ -35,21 +44,34 @@ IDS
 
 .logo
 {
-  padding: 7.5px 10px 7.5px 0;
+  padding: 5px 0px 5px 0;
   
 }
+
+.logo > a
+{
+  margin: 0px;
+  padding: 0px;
+}
+
 .logo img
 {
-  width: 300px;
+  width: 250px;
 
   
 }
+
 
 .menu-item a:hover, .toggle a:hover
 {
   color: #B861FF;
  
 }
+
+
+
+
+
 
 /***************** end of navbar style**********************/
 
@@ -157,12 +179,17 @@ h1, h2
     text-align: center;
   }
 
-#navbar
+  #navbar
 {
-    border: 1px solid rgb(255, 255, 255); /*remove after finished*/
-    display: inline-flex;
-  
+     display: inline-flex;
+ 
 
+}
+
+#services, #languages, #about, #contact
+{
+
+  scroll-margin-top: 60px;
 }
 
 .section
@@ -190,7 +217,6 @@ h1, h2
    
  
 }
-
 
 
 #canvas
@@ -289,7 +315,10 @@ h1
    
  }
 
-
+ #hero-section
+ {
+  margin-top: 150px;
+ }
 
 
   h2
@@ -339,7 +368,7 @@ h1
 
   #services, #languages, #about, #contact
   {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
     #lang-container
