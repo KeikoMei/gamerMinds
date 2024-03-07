@@ -189,7 +189,10 @@ h1, h2
 {
 
   scroll-margin-top: 60px;
+  
 }
+
+
 
 .section
 {
@@ -337,21 +340,22 @@ h1
     /********flex container for services**********/
     /*********************************************/
 
-    .services-container
+    .flex-container
     {
       display: flex;
-    flex-wrap: wrap;
-
-   /*   flex-direction: row;*/
+      flex-wrap: wrap;
+      justify-content: center;
       margin-top: 95px;
       margin-bottom: 95px;
       gap: 20px;
-      justify-content: center;
+      
       margin-left: 10%;
       margin-right: 10%;
     }
 
-    .service-card
+
+
+    .card
     {
       border-color: #B861FF;
       border-style: solid;
@@ -360,69 +364,44 @@ h1
       padding-right: 5%;
       padding-bottom: 20px ;
       padding-left: 5%;
-      width: 40%;
+   
       margin: 10px;
       text-align: left;
       line-height: 1.5;
       border-radius: 10px;
-      flex: 1 0 200px; /* flex-grow | flex-shrink | flex-basis */
-      font-size: 1.1em; ;
+          font-size: 1.1em; ;
 
     }
 
+  
+
+
+    .service-card, .about-card
+    {
+      flex: 1 0 200px; /* flex-grow | flex-shrink | flex-basis */
+      width: 40%;
+    }
+
+
     @media (max-width: 800px) /* Responsive layout - makes a one column layout instead of a two-column layout */
     {
-      .service-card 
+      .service-card, .about-card
       {
         flex-basis: 100%;
       }
     }
 
-/***********************************************/
-  .flex-container
-  {
-    display: flex;
-    flex-direction: row;
-    margin-top: 95px;
-    margin-bottom: 95px;
-    gap: 20px;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-
-
-
-
+   
+    
     .serviceIcon
     {
       width: 50px;
-      float:left;
+      float: left;
       margin-right: 30px;
       margin-top: 20px;
     }
 
-    .card
-    {
-      border-color: #B861FF;
-      border-style: solid;
-      border-width: 2px;
-     /* padding-top: 10px;*/
-      padding-right: 5%;
-      padding-bottom: 20px ;
-      padding-left: 5%;
-      width: 40%;
-      margin:50px auto 50px auto;
-      text-align: left;
-      line-height: 1.5;
-      border-radius: 10px;
-    }
-
-  #services, #languages, #about, #contact
-  {
-    padding-top: 40px;
-  }
+/***********************************************/
 
     #lang-container
     {
@@ -432,23 +411,48 @@ h1
       padding: 5% 10% 5% 10%;
       width: 50%;
       margin:0% auto 0% auto;
+     justify-content: center;
+      align-items: center;
       
       
+    }
+
+        /* For tablets: */
+    @media (min-width: 768px) {
+      #lang-container {
+        width: 70%; /* Adjust as needed */
+      }
+    }
+    
+    /* For desktop: */
+    @media (min-width: 1024px) {
+      #lang-container {
+        width: 80%; /* Adjust as needed */
+      }
+
+      /*for 4k screens*/
+      @media (min-width: 2560px) {
+        #lang-container {
+          width: 50%; /* Adjust as needed */
+        }
+      }
     }
 
     .language
     {
       margin:6px;
-      border: solid 1px #e7e7e7;
+      border: solid 1px #B861FF;
       width: 200px;
       border-radius: 3px;
-      background: #5f5e62;
+      background: #382646;
       padding: 10px 10px;
       text-align: left;
       font-size: 1.1em;
 
     }
    
+  
+
     .button
     {
       border: #B861FF;
@@ -456,7 +460,7 @@ h1
       /*background-image: linear-gradient(top,#7A76FF , #F44CFF);
       background-image: linear-gradient(to bottom, #7A76FF, #F44CFF);*/
       border-radius: 10px;
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 25px;
       font-weight: 500;
       padding: 6px 20px 6px 20px;
@@ -473,6 +477,8 @@ h1
       background-image: linear-gradient(to bottom, #9978d6, #8565bf);
       */text-decoration: none;
     }
+
+    
 
 .social-link
 {
@@ -521,49 +527,4 @@ h1
       }
       
 
-/*
-#intro
-{
-    background-color:#FFC7C2;
-    padding: 80px;
-    text-align: center;
-}
-
-
-#services
-{
-    background-color:#FCD19C;
-}
-
-#contact-us
-{
-    background-color:#BDE3FF;
-}
-
-#footer
-{
-    background-color:#E6E6E6;
-}
-
-#logo
-{
-    height: 150px;
-}
-
-
-#img1
-{
-    height: 400px;
-    
-
-}
-
-#img2
-{
-    height: 300px;
-    
-
-}
-
-*/
-
+      /***********************        END OF FONTS           **************************************/  
