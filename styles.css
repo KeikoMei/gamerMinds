@@ -1,32 +1,29 @@
-/*******to do *************/
-/*
-Alphabetic order
-Elements
-Classes
-IDS
-*/
+
 
 /*****************navbar style**********************/
 #navbar 
 {
-  
   background: black;
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
+  font-size: 1.5em;
   position: fixed;
   top: 0; 
-  z-index:1;
-  overflow: hidden;
   width: 100%;
-  font-size: 1.5em;
-  
+  overflow: hidden;
+  z-index:1;
+
+  /*padding: 0;*/
+  /*box-sizing: border-box;*/
+  /*margin: 0;  */
+
 }
 
-
-.menu-item, .toggle, .logo
-{
-  padding: 5px;
+.nav-container
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  
 }
 
 .menu-item > a , .toggle > a
@@ -38,12 +35,16 @@ IDS
 
 .menu
 {   
-  list-style-type: none;
+  
+  display: flex;
+  gap: 1em;
+  list-style: none;
 }
 
 .logo
 {
-  padding: 5px 0px 5px 0;
+ 
+  display: flex;
   
 }
 
@@ -91,7 +92,7 @@ IDS
 .menu li a 
 {
   display: block;
-  padding: 15px 5px;
+ 
 }
 
 .toggle 
