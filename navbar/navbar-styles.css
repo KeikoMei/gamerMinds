@@ -1,0 +1,271 @@
+/********** added********************/
+/* Basic styling */
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main
+{
+  margin-top: 120px;
+  color: rgb(152, 9, 224);
+}
+
+body 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+
+nav 
+{
+    background: black;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    overflow: hidden;
+    padding: 0%;
+}
+
+.menu-item > a, .social-links > a , .toggle > a  
+{
+    color: white;
+    text-decoration: none;
+}
+
+.logo img
+{
+ width: 250px;
+
+}
+
+.social-links img
+{
+  width: 30px;
+  height: 30px;
+
+}
+
+.menu-item 
+{
+    padding: 10px;
+  }
+
+  .menu-item a:hover, .toggle a:hover
+{
+  color: #B861FF;
+ 
+}
+
+.logo, .social-links  
+{
+  display: flex;
+}
+
+.social-links 
+{
+    gap: 1em;
+ }
+
+ .nav-container /* flex container 1 */
+{
+    display: flex;
+     /*align-items: flex-start; */    
+     align-items: center;
+     flex-wrap: nowrap;
+     background: none;
+     justify-content: space-between;
+     padding: 1em;
+}
+
+.menu /* flex container 1.1 */
+{
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+/* Desktop menu */
+@media all and (min-width: 992px)
+{
+  .logo 
+  {
+      order: 0;
+  }
+
+  .menu
+    {
+        order: 1;
+    }
+
+    .social-links
+    {
+        order: 2;
+    }
+
+    .menu-item 
+    {
+       position: relative;
+       display: block; 
+       width: auto;
+    }
+
+    body 
+    {
+      background-color: purple;
+    }
+  }
+
+  /* Mobile menu */
+  @media (max-width: 600px) 
+{
+  .nav-container
+  {
+      flex-wrap: wrap;
+      align-items: center;
+  }
+
+  .menu li a {
+
+    display: block;
+
+    padding: 15px 5px;
+}
+
+.logo 
+{
+    order: 0;
+}
+
+.social-links
+{
+    order: 1;
+    display: none;
+}
+
+.toggle
+{
+    order: 2;
+    font-size: 20px;
+}
+
+.menu
+    {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        display: none;
+   /* display: block;*/
+    }
+
+    .active.menu 
+   {
+
+        display: block;
+    
+    }
+
+    /* .item 
+    {
+        width: 100%;
+        text-align: center;
+        
+    
+    }*/
+
+    body 
+    {
+      background-color: blue;
+    
+    }
+     
+  }
+   /* Tablet menu */
+
+   @media (min-width:601px) and (max-width:991px)
+   {
+
+    .nav-container
+    {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu li a 
+    {
+        display: block;  
+        padding: 15px 5px;
+    }
+
+    .menu 
+    {
+
+        justify-content: center;
+
+    }
+
+    .logo {
+
+      /*  flex: 1;*/
+        order: 0;
+
+    }
+
+    .social-links
+    {
+        
+        width: auto;
+        order: 1;
+     /*   display: block;*/
+        
+    }
+
+    .toggle
+    {
+     /*   flex: 1;*/
+     /*   text-align: right;*/
+        order: 2;
+        font-size: 20px;
+    }
+
+    .menu
+    {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        display: none;
+   /* display: block;*/
+    }
+
+    .active.menu 
+    {
+        display: block;
+    }
+
+    body 
+    {
+      background-color: green;
+    }
+  }
+      
+/***********************************/
+
+    
+
+   
+
+    
+ 
+ 
+ 
+
+
+  
+
+
+  

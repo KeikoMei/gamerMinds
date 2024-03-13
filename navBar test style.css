@@ -1,0 +1,115 @@
+.nav-container flex container 1
+.nav-links (menu) flex container 1.1
+
+
+/***********************/
+
+
+
+
+/********mobile menu*************/
+@media (max-width: 768px) {
+  .nav-container {
+    
+ /*   flex-direction: row;*/
+ flex-wrap: wrap;
+    
+  }
+
+
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    order: 2;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .nav-links.display {
+  /*  display: flex;
+    flex-direction: column;*/
+    display: block;
+    gap: 0.5em;
+    
+  }
+
+  .nav-links li a 
+{
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu-item 
+{
+  order: 2;
+  width: 100%;
+  text-align: center;
+ /* display: none;*/
+ display: block;
+}
+
+.active .menu-item
+{
+
+  
+
+}
+
+
+}
+
+
+/************************************/
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    order: 3;
+  }
+
+  .social-links {
+    order: 2;
+  }
+
+  .nav-links.display {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

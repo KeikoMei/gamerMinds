@@ -4,74 +4,113 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gamer Minds</title>
-        <link rel="stylesheet" href="./styles.css">
+
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="stylesheet" type="text/css" href="./navbar-styles.css">
+        <link rel="stylesheet" type="text/css" href="./canvas-styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        
+        <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./assets/images/logos/SVG/Logo.svg">
     </head>
-    
+   
     <body>
- 
+
         <nav id="navbar">
 
-            <ul class="menu">
-
-                <li class="logo"><a href="#"><img src="./assets/images/logos/PNG/Logo GM White.png">                    </a></li>
-                <li class="menu-item"><a href="#services">Services</a></li>
+            <div class="nav-container"> <!-- flex container 1 --> 
+        
+              <div class="logo"> <!-- flex element  1 --> 
+                <a href=""><img src="./assets/images/logos/PNG/GMLC transparent.png" alt="Gamer Minds Logo"></a>
+              </div>
+        
+              <ul class="menu"> <!-- flex element  2 -->  <!-- flex container 1.1 --> <!-- nav-links-->
+                <li class="menu-item"><a href="#services">Services</a></li> <!-- item-->
                 <li class="menu-item"><a href="#languages">Languages</a></li>
-                <li class="menu-item"><a href="#about">Why us?</a></li>
+                <li class="menu-item"><a href="#about">Why Us?</a></li>
                 <li class="menu-item"><a href="#contact">Contact</a></li>
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-
-            </ul>
-            
+              </ul>
+        
+              <div class="social-links"><!-- flex element  3 -->  <!-- flex container 1.3 --> 
+                <a href="https://www.linkedin.com/company/gamer-minds" target="_blank"><img src="./assets/images/icons/linkedin white.png" alt="linkedin icon"></a>
+                <a href="https://www.xiaohongshu.com/user/profile/65bbd39b000000000e027308" target="_blank"><img src="./assets/images/icons/xiaohongshu white.png" alt="xiaohongshu icon"></a>
+                <a href="mailto:info@gamer-minds.com"><img src="./assets/images/icons/envelope white.png" alt="email icon"></a>
+             </div>
+        
+              <div class="toggle" id="mobile-menu"> <!-- flex element  4 -->  <!-- menu-toggle --> 
+                <a href="#"><i class="fas fa-bars"></i></a>
+              </div>
+        
+            </div>
+        
         </nav>
 
-        <div id="hero-section" class="section">
-
-            <h1>Gamer minds</h1>
-            <h2><p>Mind your game.</p></h2>
-            <p>Nerf QTE fps OP Bullet Hell Nintendo 3DS campaign cutscene VAC rubber banding Wombo Combo XP. Fatality RNG Dragon Ball Puzzle Game level design jrpg analog control save point Tetris. DPS Beat 'em up bug NBA 2K retrogaming end user GG ez WoW God of War bullshot </p>
+        <canvas id="projector"></canvas>
         
+   
+       
+         
+        
+
+        <div id="hero-section" class="section">
+                 
+            <h1>Mind your game</h1>
+            <h2>Elevate the Adventure, Translate the Experience</h2>
+            <p>Unlock the full potential of your game with Gamer Minds. We infuse every translation with the thrill of the gameplay and the authenticity of the narrative. Let's take your gaming experience to the players worldwide, one perfectly crafted word at a time.</p>
+            <a class="button" href="mailto:info@gamer-minds.com">CONTACT US</a>
+            <a class="button" href="#about">ABOUT US</a>
+        
+            
+       
         </div>
+       
 
-        <div id="services" class="section">
+        <div id="services" class="section" >
 
-            <h2>Our services</h2>
-
-            <div class="card">
-                
-                <img class="serviceIcon" src="./assets/images/icons/translation.png" alt="localization icon">
-
-                <h3>Localization</h3>
-
-                <p>Grinding grinding heat map CoD Devil May Cry Grand Theft Auto: San Andreas Platform Game controller Donkey Kong multi-tap bug nerf. Nintendo 3DS Wombo Combo FPS horde mode griefing Magic Points</p>
+            <h2 class="divider line glow">Our services</h2>
             
-            </div>
+            <p class="summary">At Gamer Minds, we believe in delivering a complete package. That's why our translation service is always coupled with meticulous proofreading – because your game's success is built on flawless communication. Discover a fusion of accuracy and artistry, designed to elevate your game's global journey.</p>
 
-            <div class="card">
+
+
+
+            <div class="flex-container services-container">
+                <div class="card service-card">
                 
-                <img class="serviceIcon" src="./assets/images/icons/gamepad.png" alt="LQA icon">
-
-                <h3>LQA</h3>
-
-                <p>Magic Points (MP) Frogger main quest Tekken PvP XP MOBA Age of Empires chams Mega Man NPC Super Smash Bros. WoW. Save point zero-player game random encounter vaporware esp cheats trolling developer. God of War end user drop-out Super Mario Galaxy feeding E.S.R.B.</p>
-            
-            </div>
-
-            <div class="card">
+                    <img class="serviceIcon" src="./assets/images/icons/translation.png" alt="localization icon">
+                    <h3>Translation</h3>
+                    <p>Experience unparalleled linguistic services with our expert team, proficient in a vast array of gaming genres. From RPGs to action-packed shooters, our translators master the gaming lexicon from “grinding” to “griefing.” Dive into immersive narratives with translations that capture the essence of each game, whether you're navigating the gritty streets in “Grand Theft Auto” or mastering combos in “Devil May Cry.”</p>
                 
-                <img class="serviceIcon" src="./assets/images/icons/list-check.png" alt="editing icon">
+                </div>
 
-                <h3>Editing</h3>
-
-                <p>Sega Genesis Monster Hunter waggle DRM shoulder buttons rapid-fire Xbox 360 Wii shovelware Action/Adventure. Holy Trinity wanted level GG broken Hot Coffee gamer D-Pad BioShock demo camp.</p>
+                <div class="card service-card">
+                
+                    <img class="serviceIcon" src="./assets/images/icons/list-check.png" alt="editing icon">
+                    <h3>Proofreading and Editing</h3>
+                    <p>Our meticulous proofreading and editing services ensure that your gaming content is flawless. Whether it's a nostalgic title on the Sega Genesis or the latest action-adventure for the Xbox 360, our editors skilfully fine-tune your content. With a sharp eye for detail, we iron out inconsistencies, refine gameplay instructions, and perfect narratives to enhance the gamer's experience.</p>
             
-            </div>
+                </div>
 
+                <div class="card service-card">
+                
+                    <img class="serviceIcon" src="./assets/images/icons/gamepad.png" alt="LQA icon">
+                    <h3>Localization Quality Assurance (LQA)</h3>
+                    <p>Elevate the gaming experience with our Localization Quality Assurance. Our LQA services focus on cultural adaptation, ensuring that every “quest” and “power-up” feels native to your audience. From the strategic depths of “Age of Empires” to the fast-paced brawls of “Super Smash Bros.,” we validate every in-game text, interface, and narrative to resonate with players globally, adhering to industry standards such as ESRB ratings.</p>
+            
+                </div>
+
+                
+            </div>
+            <!--
             <div class="card">
                 
                 <img class="serviceIcon" src="./assets/images/icons/magic-wand.png" alt="transcreation icon">
@@ -81,26 +120,26 @@
                 <p>Invisible wall nerf RTS head bob power spike overlay mana Wii PlayStation 2 assist noob tube dynamic game difficulty balancing. Hack ‘n’ Slasher Driving simulator cutscene A GoldenEye 007 permadeath GG</p>
             
             </div>
+            -->    
             
         </div>
 
         <div id="languages" class="section">
             <!-- Inspiration https://gengo.com/pricing-languages/ -->
-            <h2>Languages</h2>
-            <p>Frag theorycraft Resident Evil anti-aliasing cut-scene Hacker drop-out MMO. Slow-down beastiary tactical switchbox Gears of War commonwealth Atari 2600 Command & Conquer. Minigame bot Sega Genesis P</p>
+            <h2 class="divider line glow">Languages</h2>
+            <p class="summary">At Gamer Minds, we specialize in translating from English to a multitude of languages, ensuring your game's story resonates with players worldwide.</p>
 
             <div id="lang-container">
 
-                <div class="language"> 🇧🇷 Portuguese (Brazil)</div>
                 <div class="language"> 🇨🇳 Chinese</div>
-                <div class="language"> 🇬🇧 English</div>
                 <div class="language"> 🇫🇷 French</div>
                 <div class="language"> 🇩🇪 German</div>
                 <div class="language"> 🇮🇹 Italian</div>
                 <div class="language"> 🇯🇵 Japanese</div>
                 <div class="language"> 🇰🇷 Korean</div>
                 <div class="language"> 🇵🇱 Polish</div>
-                <div class="language"> 🇪🇸 🇮🇨 Spanish</div>
+                <div class="language"> 🇧🇷 Portuguese (Brazil)</div>
+                <div class="language"> 🇪🇸 Spanish</div>
                 <div class="language"> 🇹🇷 Turkish</div>
             </div>
 
@@ -108,52 +147,53 @@
         </div>
 
         <div id="about" class="section">
-            <h2>Why choose us?</h2>
-            <p>Loot system faceroll horde mode Platformer Wombo Combo Xbox One Game Boy kill MOBA Survival Horror indie floaty Point-and-click. MMO barrel stuffing troll nerf homebrew RPG Tony Hawk's. Boss accelerometer God Mode BioShock Command & Conquer SWTOR player versus environment. Slow-down nerf GG no re AoE God of War </p>
+            <h2 class="divider line glow">Why choose us?</h2>
+            <p class="summary">Discover the Gamer Minds difference. With a keen focus on quality, commitment, and rich gaming experience, we don't just translate games — we bring them to life. Choose a partner dedicated to precision, cultural authenticity, and human touch in every narrative.</p>
         
-            <div class="card">
+            <div class="flex-container about-us-container">
                 
-                <h3>Quality</h3>
-
-                <p>AoE Konami code adventure game secret character level player versus environment tactical strafing power spike Driving simulator. Single-player horde mode Mario Party clipping SNES compulsion loop anime KO speedhacks Age of Empires FPS Dreamcast.</p>
-            
-            </div>
-
-            <div class="card">
+                <div class="card about-card">
                 
-                <h3>Commitment</h3>
-                <p>Microsoft The Elder Scrolls V: Skyrim Resident Evil dead zone Xbox One rubber banding MMO ambient occlusion. Wii U track-ball hyperspace OST Fighting game first-person sweaty goal touchscreen Sidescroller Healer.</p>
-            
-            </div>
+                    <h3>Quality</h3>
+                    <p>Delve into worlds crafted with precision. Our translations capture the essence of your gaming universe, ensuring every adventure, puzzle, and battle feels authentic and engaging. From strategy guides to dynamic in-game text, expect nothing less than the highest fidelity to the original experience.</p>   
+                </div>
 
-            <div class="card">
+                <div class="card about-card">
                 
-                <h3>Experience</h3>
-                <p>Gran Turismo double-jump kart racing PlayStation Vita isometric view strategy guide manic shooter GoldenEye 007 battle pass. Turbo level PvE rumble pack Tom Clancy's Splinter Cell One-shot-kill NFL 2K1 Glory Seeking MOBA</p>
+                    <h3>Commitment</h3>
+                    <p>Your gaming content is our passion. We pledge to deliver not just translations but experiences—immersive, accurate, and true to your vision. From the first quest to the final boss, our dedication is to the integrity of your creation.</p>
             
-            </div>
+                </div>
 
-            <div class="card">
+                <div class="card about-card">
                 
-                <h3>Human translation</h3>
-                <p>GG main quest multi-tap Critical Hit Mass Effect Red Dead Redemption 2 PlayStation Portable triple jump continue QTE resolution. Tryhard campaign Gran Turismo The Legend of Zelda: The Wind Waker Grand Theft Auto Holy Trinity NPC Microsoft resolution MMORPG.</p>
+                    <h3>Experience</h3>
+                    <p>With years of gaming and translation expertise, we navigate through narratives, terms, and cultural nuances like a seasoned player through questlines. Our background spans genres and platforms, ensuring knowledgeable and contextually aware translations.</p>
             
-            </div>
+                </div>
+
+                <div class="card about-card">
+                
+                    <h3>Human translation</h3>
+                    <p>Our translations go beyond words; they convey emotions, intentions, and the thrill of gaming. We blend linguistic skill with gamer insights to produce translations that resonate with players and preserve the heart and soul of your games, without relying on Machine Translation.</p>
+            
+                </div>
         
         
+            </div>
         </div>
 
         <div id="contact" class="section">
             <div id="contact-details">
 
-                <h2>Get in touch</h2>
-                <h3>Nintendo Switch aiming down sights</h3>
-                <p>Whale cheat JRPG Pac-Man 3d graphics Halo AFK turn-based quickscope Camping/Active Camping Tekken.</p>
-                <a class="contact-button" href="mailto:info@gamer-minds.com">CONTACT US</a>
+                <h2 class="divider line glow">Get in touch</h2>
+                <h3>We'd love to hear from you!</h3>
+                
+                <a class="button" href="mailto:info@gamer-minds.com">CONTACT US</a>
                 <h3>Or find us in our social media channels</h3>
                 
-                <a class="social-link" href="https://www.linkedin.com/company/gamer-minds">LinedIn</a>
-                <a class="social-link" href="https://www.xiaohongshu.com/user/profile/65bbd39b000000000e027308">Xiaohongshu</a>
+                <a class="social-link" href="https://www.linkedin.com/company/gamer-minds" target="_blank">LinkedIn</a>
+                <a class="social-link" href="https://www.xiaohongshu.com/user/profile/65bbd39b000000000e027308" target="_blank">Xiaohongshu</a>
 
 
                 
@@ -167,9 +207,15 @@
 
 
 
+<!-------------------------- Javascript------------------------------------>
 
-
+        <!-- Behaviour -->
         <script src="./script.js"></script>
 
+        <!-- Canvas -->
+        <script src='https://code.createjs.com/easeljs-0.7.1.min.js'></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+        <script type="text/javascript"  src='./canvas.js'></script>
+    
     </body>
 </html>
