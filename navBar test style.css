@@ -1,30 +1,115 @@
- /* The navigation bar */
- .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    height: 50px;
+.nav-container flex container 1
+.nav-links (menu) flex container 1.1
+
+
+/***********************/
+
+
+
+
+/********mobile menu*************/
+@media (max-width: 768px) {
+  .nav-container {
+    
+ /*   flex-direction: row;*/
+ flex-wrap: wrap;
+    
   }
-  
-  /* Links inside the navbar */
-  .menu-item > a {
-    float: left;
+
+
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    order: 2;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .nav-links.display {
+  /*  display: flex;
+    flex-direction: column;*/
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    gap: 0.5em;
+    
   }
+
+  .nav-links li a 
+{
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu-item 
+{
+  order: 2;
+  width: 100%;
+  text-align: center;
+ /* display: none;*/
+ display: block;
+}
+
+.active .menu-item
+{
+
   
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
+
+}
+
+
+}
+
+
+/************************************/
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: row;
   }
-  
-  /* Main content div */
-  .main {
-    margin-top: 100px; /* Add a top margin to avoid content overlay */
-  } 
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    order: 3;
+  }
+
+  .social-links {
+    order: 2;
+  }
+
+  .nav-links.display {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
