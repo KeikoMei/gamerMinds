@@ -25,7 +25,22 @@ function toggleMenu() {
     }
 
 }
-
 /* Event Listener */
 
 toggle.addEventListener("click", toggleMenu, false);
+
+/**
+ * Hides the navigation menu when a menu item is clicked 
+ */
+function hideNavigation() {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+}
+
+const menuItems = document.querySelectorAll(".menu-item");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", hideNavigation);
+});
+
+

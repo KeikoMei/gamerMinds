@@ -1,15 +1,16 @@
 /* Basic styling */
-*{
+*
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
- }
+}
 
 body 
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
- }
+}
 
  .main
 {
@@ -28,7 +29,8 @@ nav
     padding: 0%;
 }
 
-  .menu-item > a, .social-links > a , .toggle > a  
+
+.menu-item > a, .social-links > a , .toggle > a  
 {
     color: white;
     text-decoration: none;
@@ -73,7 +75,7 @@ nav
 
 /*************************************/
 
-/* Desktop menu */
+
 
 .nav-container /* flex container 1 */
 {
@@ -94,7 +96,8 @@ nav
 }
 
 
-@media all and (min-width: 960px)
+/* Desktop menu */
+@media all and (min-width: 992px)
 {
 
     .logo 
@@ -123,11 +126,17 @@ nav
     {
         display: none;
     }
+
+    body 
+  {
+    background-color: purple;
+  }
 }
 
 
 /* Mobile menu */
-@media (max-width: 768px) 
+
+@media (max-width: 600px) 
 {
     .nav-container
     {
@@ -168,7 +177,8 @@ nav
    /* display: block;*/
     }
 
-   .active.menu {
+   .active.menu 
+   {
 
         display: block;
     
@@ -181,23 +191,91 @@ nav
         
     
     }*/
-   
 
+    body 
+  {
+    background-color: blue;
+  
+  }
+   
 }
 
 
+/* Tablet menu */
 
+@media (min-width:601px) and (max-width:991px)
+{
+    .nav-container
+    {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+  
+  
+  
+  
 
+    .menu li a 
+    {
+        display: block;  
+        padding: 15px 5px;
+    }
+    
+    .menu 
+    {
 
+        justify-content: center;
 
+    }
 
-/*.button.secondary { /* divider between buttons and menu links 
+    .logo {
 
-    border-bottom: 1px #444 solid;
+      /*  flex: 1;*/
+        order: 0;
 
-}*/
+    }
 
+    .social-links
+    {
+        
+        width: auto;
+        order: 1;
+     /*   display: block;*/
+        
+    }
+  
+    .toggle
+    {
+     /*   flex: 1;*/
+     /*   text-align: right;*/
+        order: 2;
+        font-size: 20px;
+    }
 
+    .menu
+    {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        display: none;
+   /* display: block;*/
+    }
+
+    .active.menu 
+    {
+ 
+         display: block;
+     
+     }
+
+    body 
+  {
+    background-color: green;
+  }
+}
+    
+ 
  
 
 
