@@ -12,6 +12,7 @@ body
 	background: linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##1D1E22', endColorstr='#2A1D36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 h1, h2

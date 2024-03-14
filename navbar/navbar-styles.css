@@ -1,3 +1,4 @@
+/***********nav bar testing************/
 /********** added********************/
 /* Basic styling */
 *
@@ -43,7 +44,7 @@ nav
 
 }
 
-.social-links img
+.social-links img, .social-links-footer img
 {
   width: 30px;
   height: 30px;
@@ -61,14 +62,17 @@ nav
  
 }
 
-.logo, .social-links  
+.logo, .social-links, .social-links-footer 
 {
   display: flex;
 }
 
-.social-links 
+.social-links, .social-links-footer
 {
     gap: 1em;
+    width: 250px;
+    justify-content: flex-end;
+   
  }
 
  .nav-container /* flex container 1 */
@@ -253,11 +257,94 @@ nav
     }
   }
       
+
+
+  footer 
+  {
+    background-color: black;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    
+    
+  }
+
+  .footer-container 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.copyright 
+{
+  text-align: center;
+ flex-grow: 1;
+}
+
+.terms
+{
+  
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+
+.attributions 
+ {
+  text-align: center;
+color: rgb(130, 130, 130);
+   
+}
+
+.attributions a
+ {
+  color: rgb(130, 130, 130); 
+}
+
+footer a
+{
+  color: white;
+  
+}
+footer a:hover
+{
+  color: #B861FF;
+}
 /***********************************/
 
-    
 
-   
+
+
+
+
+@media (max-width: 600px) 
+{
+  .footer-container
+  {
+    flex-direction: column;
+    
+  }
+
+  .social-links-footer
+  {
+    justify-content: center;
+  }
+
+  .footer-container > div
+  {
+    padding-top: 10%;
+    
+  }
+}
+
+
+
+
 
     
  
