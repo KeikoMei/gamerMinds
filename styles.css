@@ -288,7 +288,13 @@ h1
 
     }
    
-  
+    .contact-details > h3
+    {
+      font-size: 2rem;
+      margin-top: 50px;
+      font-weight: normal;
+    }
+
 
     .button
     {
@@ -303,8 +309,11 @@ h1
       padding: 6px 20px 6px 20px;
       text-decoration: none;
       margin-top: 50px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       margin-left:20px;
+      margin-right:20px;
+     display: inline-block;
+     
     }
   
     .button:hover 
@@ -320,9 +329,35 @@ h1
 .social-link
 {
   color:#B861FF;
-  font-size: larger;
-  
+  font-size: 1.7em;
+  text-decoration: none;
+ 
+}
 
+.social-link:hover
+{
+  text-decoration: underline;
+}
+
+
+
+
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-container a {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  
+}
+
+.social-container img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
 }
 
 
