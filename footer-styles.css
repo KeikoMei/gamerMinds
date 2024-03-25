@@ -27,13 +27,13 @@ footer *
     padding: 0%;
 }
 
-.terms
+.terms-link
 {
     margin-bottom: 30px;
     text-align: center; 
 }
 
-.terms a
+.terms-link a
 {
     font-size: 1.3rem;
 }
@@ -67,7 +67,7 @@ footer *
 {
     display: flex;
     gap: 30px;
-    width: 250px;
+    width: 270px;
     justify-content: flex-end;
 }
 
