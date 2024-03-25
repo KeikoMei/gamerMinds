@@ -1,49 +1,137 @@
+/***********GLOBAL STYLES**************/
 body
 {
     margin:0;
     font-family: 'Athiti', sans-serif;
-   /* background-image: linear-gradient(to left, #51555C, #293139); */
     background: #1D1E22; /* Old browsers */
-	background: -moz-linear-gradient(0deg,  #1D1E22 50%, #2A1D36 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#2A1D36), color-stop(100%,#2A1D36)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* IE10+ */
-	background: linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##1D1E22', endColorstr='#2A1D36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	background-attachment: fixed;
-  overflow-x: hidden;
+	  background: -moz-linear-gradient(0deg,  #1D1E22 50%, #2A1D36 100%); /* FF3.6+ */
+	  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#2A1D36), color-stop(100%,#2A1D36)); /* Chrome,Safari4+ */
+	  background: -webkit-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Chrome10+,Safari5.1+ */
+	  background: -o-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* Opera 11.10+ */
+	  background: -ms-linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* IE10+ */
+	  background: linear-gradient(0deg,  #1D1E22 50%,#2A1D36 100%); /* W3C */
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##1D1E22', endColorstr='#2A1D36',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	  background-attachment: fixed;
+    overflow-x: hidden;
+    color: rgb(234, 230, 230); 
 }
 
+
+/*****************Main page styles****************/
 h1, h2
-  {
-    text-align: center;
-  }
-
-
-
-#services, #languages, #about, #contact
 {
-
-  scroll-margin-top: 60px;
-  
+    text-align: center;
 }
 
+h1
+{
+    font-family: "Montserrat", sans-serif;
+    color: #B861FF;    
+}
 
+h2
+{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#canvas
+{
+    height:100%; 
+	  width:100%; 
+	  margin:0px;
+    overflow: hidden;
+}
 
 .section
 {
-   
-   /* border-style: solid;
-    border-color: white;*/
     position: relative;
-    color: rgb(234, 230, 230);
     padding-top: 45px;
     padding-bottom: 50px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
+.summary
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#services, #languages, #about, #contact
+{
+    scroll-margin-top: 60px; 
+}
+
+ /**********************h2 divider ***********************/
+.divider 
+{
+    display: flex;
+  
+    &:before,
+    &:after 
+    {
+      content: "";
+      flex: 1;
+    }  
+}
+
+.line
+{
+    align-items: center;
+    margin: 1em -1em;
+  
+    &:before,
+    &:after 
+    {
+      height: 1px;
+      margin: 0 1em;
+    }
+}
+
+.glow
+{
+    &:before,
+    &:after
+    {
+      height: 6px;
+      -webkit-filter: blur(5px);
+      border-radius: 5px;
+    }
+
+    &:before 
+    {
+      background: linear-gradient(to right, #8173FF, #E053FF);
+    }
+  
+    &:after
+    {
+      background: linear-gradient(to left, #8173FF, #E053FF);
+    }
+}
+/**********************end h2 divider*****************************/
+
+
+/************Hero section styles***************/
+#hero-section
+{
+    margin-top: 120px; /*para que no se superponga con la navbar*/
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#hero-section > h1
+{
+    font-size: 7rem;
+    margin: 50px auto 0 auto;
+    text-transform: uppercase;
+}
+
+#hero-section > h2
+{
+    font-family: "Montserrat", sans-serif;
+}
 
 #hero-section > p
 {
@@ -53,196 +141,147 @@ h1, h2
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
-   
- 
-}
-
-
-#canvas
-{
-	height:100%; 
-	width:100%; 
-	margin:0px;
-  overflow: hidden;
-  
-	
-	
-}
-
-hr
-{
-  
- 
-  border-style: solid none none;
-  border-color: #8E6FFF;
-  width: 40%;
-  border-width: 1px;
-
 }
 
 .gamer
 {
-  font-size: 1.3em;
-  color: #B861FF;
-}
-
-/**********************h2 divider ***********/
- 
-.divider 
-{
-  display: flex;
-  
-  &:before,
-  &:after 
-  {
-    content: "";
-    flex: 1;
-  }
-  
-}
-
- 
-.line
- {
-  align-items: center;
-  margin: 1em -1em;
-  
-  &:before,
-  &:after 
-  {
-    height: 1px;
-    margin: 0 1em;
-  }
-}
-
-.glow
- {
-  &:before,
-  &:after
-   {
-    height: 6px;
-    -webkit-filter: blur(5px);
-    border-radius: 5px;
-  }
-
-  &:before 
-  {
-    background: linear-gradient(to right, #8173FF, #E053FF);
-  }
-  
-  &:after
-   {
-    background: linear-gradient(to left, #8173FF, #E053FF);
-  }
-}
-
-/**********************end h2 divider***********/
-
-
-
-
-
-.summary
-{
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1.3em;
-  text-align: center;
-}
-
-h1
-{
-
-    font-size: 7rem;
-    margin: 50px auto 0 auto;
-    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
     color: #B861FF;
-    text-transform: uppercase;
- }
+}
 
- #hero-section > h2
- {
-  font-family: "Montserrat", sans-serif;
-   
- }
+/* Tablet font sizes */
 
- #hero-section
- {
-  margin-top: 120px;
- }
-
-
-  h2
+@media (min-width:600px) and (max-width:992px)
+{
+  #hero-section > h1
   {
+      font-size: 6rem;
+  }
   
-    font-size: 3rem;
-        font-weight: normal;
-    }
-
-    /*********************************************/
-    /********flex container for services**********/
-    /*********************************************/
-
-    .flex-container
-    {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 95px;
-      margin-bottom: 95px;
-      gap: 20px;
-      
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-
-
-
-    .card
-    {
-      border-color: #B861FF;
-      border-style: solid;
-      border-width: 2px;
-      padding-top: 10px;
-      padding-right: 5%;
-      padding-bottom: 20px ;
-      padding-left: 5%;
-   
-      margin: 10px;
-      text-align: left;
-      line-height: 1.5;
-      border-radius: 10px;
-          font-size: 1.1em; ;
-
-    }
-
+  #hero-section > h2
+  {
+      font-size: 2.5rem;
+  }
   
+  #hero-section > p
+  {
+      font-size: 1.5em;
+      font-weight: 500;
+  }
+  
+  .gamer
+  {
+      font-size: 1.2em;
+  }
+}
 
 
+/* Mobile font sizes */
+@media (max-width: 600px) 
+{
+  #hero-section > h1
+  {
+      font-size: 5rem;
+  }
+  
+  #hero-section > h2
+  {
+      font-size: 2.2rem;
+  }
+  
+  #hero-section > p
+  {
+      font-size: 1.4em;
+      font-weight: 450;
+  }
+  
+  .gamer
+  {
+      font-size: 1.2em;
+  }
+}
+
+/************Services and About us styles**********************/
+
+/********flex container for Services and About us**********/
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card /*Text container (flex element)*/
+{
+    border-color: #B861FF;
+    /*border-image: linear-gradient(to right, #8173FF, #B861FF) 1;*/  /*Gradient is not compatible with rounded corners*/
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 10px;
+    padding-right: 5%;
+    padding-bottom: 10px ;
+    padding-left: 5%;
+    margin: 10px;
+    text-align: left;
+    line-height: 1.5;
+    border-radius: 10px; 
+}
+
+.card > p
+{
+    font-size: 1.1em;
+}
+
+
+
+.serviceIcon
+{
+    width: 50px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.service-card, .about-card
+{
+    flex: 1 0 200px; /* flex-grow | flex-shrink | flex-basis */
+    width: 40%;
+}
+
+
+@media (max-width: 800px) /* Responsive layout - makes a one column layout instead of a two-column layout */
+{
     .service-card, .about-card
     {
-      flex: 1 0 200px; /* flex-grow | flex-shrink | flex-basis */
-      width: 40%;
-    }
-
-
-    @media (max-width: 800px) /* Responsive layout - makes a one column layout instead of a two-column layout */
-    {
-      .service-card, .about-card
-      {
         flex-basis: 100%;
-      }
     }
+}
+
+
+
+
+
+/***********************************/
+
+
+
+hr /*sin uso*/
+{
+  border-style: solid none none;
+  border-color: #8E6FFF;
+  width: 40%;
+  border-width: 1px;
+}
 
    
-    
-    .serviceIcon
-    {
-      width: 50px;
-      float: left;
-      margin-right: 30px;
-      margin-top: 20px;
-    }
 
 /***********************************************/
 
@@ -314,8 +353,8 @@ h1
       font-weight: 500;
       padding: 6px 20px 6px 20px;
       text-decoration: none;
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       margin-left:20px;
       margin-right:20px;
      display: inline-block;
@@ -365,6 +404,23 @@ h1
   height: 24px;
   margin: 10px;
 }
+
+
+.terms
+{
+  margin-top: 140px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+
+}
+
+.terms >h1
+{
+  font-size: 3rem;
+ 
+}
+
 
 
     /***********************        FONTS           **************************************/
