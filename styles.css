@@ -55,7 +55,7 @@ h2
 {
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -64,7 +64,20 @@ h2
     scroll-margin-top: 60px; 
 }
 
- /**********************h2 divider ***********************/
+@media (max-width: 600px) 
+{
+    h2
+    {
+        font-size: 2.5rem;
+    }
+
+    .summary
+    {
+        font-size: 1.3em;
+    }
+}
+
+/**********************h2 divider ***********************/
 .divider 
 {
     display: flex;
@@ -203,8 +216,7 @@ h2
 
 /************Services and About us styles**********************/
 
-/********flex container for Services and About us**********/
-
+/********flex container for Services and About us cards**********/
 .flex-container
 {
     display: flex;
@@ -238,8 +250,6 @@ h2
     font-size: 1.2em;
 }
 
-
-
 .serviceIcon
 {
     width: 50px;
@@ -256,7 +266,6 @@ h2
     width: 40%;
 }
 
-
 @media (max-width: 800px) /* Responsive layout - makes a one column layout instead of a two-column layout */
 {
     .service-card, .about-card
@@ -265,7 +274,57 @@ h2
     }
 }
 
+/***************Contact section  styles**********************/
 
+.contact-details > h3
+{
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.button
+{
+    border: #B861FF;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 20px 6px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    display: inline-block;
+}
+
+.button:hover 
+{
+    background: #B861FF;
+    text-decoration: none;
+}
+
+.social-container
+{
+  display: flex;
+  justify-content: center;
+}
+/***********Mobile view*************/
+@media (max-width: 600px) 
+{
+    .social-container
+    {
+        flex-direction: column;
+    }
+
+    .social-link
+    {
+        justify-content: center;
+    }
+
+}
 
 
 
@@ -333,41 +392,14 @@ hr /*sin uso*/
 
     }
    
-    .contact-details > h3
-    {
-      font-size: 2rem;
-      margin-top: 50px;
-      font-weight: normal;
-    }
 
 
-    .button
-    {
-      border: #B861FF;
-      border-style: solid;
-      /*background-image: linear-gradient(top,#7A76FF , #F44CFF);
-      background-image: linear-gradient(to bottom, #7A76FF, #F44CFF);*/
-      border-radius: 10px;
-      color: rgb(255, 255, 255);
-      font-size: 25px;
-      font-weight: 500;
-      padding: 6px 20px 6px 20px;
-      text-decoration: none;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left:20px;
-      margin-right:20px;
-     display: inline-block;
-     
-    }
+   
+
+
   
-    .button:hover 
-    {
-      background: #B861FF;
-     /* background-image: linear-gradient(top, #a13ad1, #8565bf);
-      background-image: linear-gradient(to bottom, #9978d6, #8565bf);
-      */text-decoration: none;
-    }
+  
+   
 
     
 
@@ -385,12 +417,12 @@ hr /*sin uso*/
 }
 
 
-
-
 .social-container {
   display: flex;
   justify-content: center;
 }
+
+
 
 .social-container a {
   display: flex;
