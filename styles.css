@@ -77,6 +77,7 @@ h2
     }
 }
 
+
 /**********************h2 divider ***********************/
 .divider 
 {
@@ -523,26 +524,38 @@ hr /*sin uso*/
   margin: 10px;
 }
 
-
-
-
-
-
-
+/*************Terms page styles****************/
 .terms
 {
-  margin-top: 140px;
+  margin-top: 160px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
 
 }
 
-.terms >h1
+.terms > h1
 {
   font-size: 3rem;
  
 }
+
+.terms >h2
+{
+  font-size: 2em;
+  text-align: left;
+  font-weight: 500;
+ 
+}
+
+.terms > p
+{
+  font-size: 1.2em;
+  text-align: left;
+ 
+}
+
+
 
 
 
