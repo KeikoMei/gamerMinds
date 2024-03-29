@@ -77,6 +77,7 @@ h2
     }
 }
 
+
 /**********************h2 divider ***********************/
 .divider 
 {
@@ -93,7 +94,7 @@ h2
 .line
 {
     align-items: center;
-    margin: 1em -1em;
+    /*margin: 1em -1em;*/
   
     &:before,
     &:after 
@@ -216,17 +217,16 @@ h2
 
 /************Services and About us styles**********************/
 
-/********flex container for Services and About us cards**********/
-.flex-container
+.flex-container /* flex container for Services and About us cards */
 {
     display: flex;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap;*/
     justify-content: center;
     margin-top: 95px;
     margin-bottom: 95px;
-    gap: 20px;
+    gap: 1%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%;  
 }
 
 .card /*Text container (flex element)*/
@@ -237,12 +237,119 @@ h2
     border-width: 2px;
     padding-top: 10px;
     padding-right: 5%;
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
     padding-left: 5%;
     margin: 10px;
     text-align: left;
     line-height: 1.5;
-    border-radius: 10px; 
+    border-radius: 10px;
+}
+
+/*****************************Services responsive styles ***************************/
+/* Services Big screen view */
+@media all and (min-width: 1500px)
+{
+    .services-container
+    {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+      width: 40%;
+    }
+}
+
+/*  Services Medium screen view */
+
+@media (min-width:992px) and (max-width:1499px)
+{
+    .services-container
+    {
+      flex-wrap: nowrap;
+    }
+ 
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0.1;
+      flex-basis: 200px;
+      width: 40%;
+    }
+}
+
+/*  Services  Mobile view */
+@media (max-width: 992px) 
+{
+    .services-container
+    {   
+      flex-direction: column;   
+    }
+
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+      width: 90%;
+    }
+}
+
+/*****************************About us responsive styles ***************************/
+/* Why us Big screen view */
+@media all and (min-width: 1500px)
+{
+    .about-us-container
+    {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .about-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+      width: 40%;
+    }
+}
+
+/*  Why us Medium screen view */
+@media (min-width:1200px) and (max-width:1500px)
+{
+  .about-us-container
+  {
+    flex-wrap: nowrap;
+  }
+ 
+  .about-card
+  {
+    flex-grow: 1;
+    flex-shrink: 0.1;
+    flex-basis: 200px;
+    width: 40%;
+  }
+}
+
+/*  Why us  Mobile view */
+@media (max-width: 1119px) 
+{
+  .about-us-container
+  {
+    flex-wrap: wrap;
+  }
+
+  .about-card
+  {
+    flex-grow: 1;
+    flex-shrink: 0.1;
+    flex-basis: 200px;
+    width: 40%;
+  }
 }
 
 .card > p
@@ -257,27 +364,44 @@ h2
     margin-right: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
-
-}
-
-.service-card, .about-card
-{
-    flex: 1 0 200px; /* flex-grow | flex-shrink | flex-basis */
-    width: 40%;
-}
-
-@media (max-width: 800px) /* Responsive layout - makes a one column layout instead of a two-column layout */
-{
-    .service-card, .about-card
-    {
-        flex-basis: 100%;
-    }
 }
 
 .about-card > p
 {
   font-size: 1.3em;
 }
+
+/*****************************Languages section styles ***************************/
+.lang-container
+{
+  display: flex;
+  overflow: auto;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 5% 5% 5% 5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 0%;
+  margin-bottom: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.language
+{
+  margin:6px;
+  border: solid 1px #B861FF;
+  width: 200px;
+  border-radius: 3px;
+  background: #382646;
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 1.1em;
+
+}
+
 
 /***************Contact section  styles**********************/
 
@@ -316,6 +440,7 @@ h2
   display: flex;
   justify-content: center;
 }
+
 /***********Mobile view*************/
 @media (max-width: 600px) 
 {
@@ -333,9 +458,14 @@ h2
 
 
 
+
+
+
+
+
+
+
 /***********************************/
-
-
 
 hr /*sin uso*/
 {
@@ -345,57 +475,9 @@ hr /*sin uso*/
   border-width: 1px;
 }
 
-   
-
 /***********************************************/
 
-    #lang-container
-    {
-      display: flex;
-      overflow: auto;
-      flex-flow: row wrap;
-      padding: 5% 10% 5% 10%;
-      width: 50%;
-      margin:0% auto 0% auto;
-     justify-content: center;
-      align-items: center;
-      
-      
-    }
-
-        /* For tablets: */
-    @media (min-width: 768px) {
-      #lang-container {
-        width: 70%; 
-      }
-    }
-    
-    /* For desktop: */
-    @media (min-width: 1024px) {
-      #lang-container {
-        width: 80%; 
-      }
-
-      /*for 4k screens*/
-      @media (min-width: 2560px) {
-        #lang-container {
-          width: 50%; 
-        }
-      }
-    }
-
-    .language
-    {
-      margin:6px;
-      border: solid 1px #B861FF;
-      width: 200px;
-      border-radius: 3px;
-      background: #382646;
-      padding: 10px 10px;
-      text-align: left;
-      font-size: 1.1em;
-
-    }
+   
    
 
 
@@ -442,21 +524,38 @@ hr /*sin uso*/
   margin: 10px;
 }
 
-
+/*************Terms page styles****************/
 .terms
 {
-  margin-top: 140px;
+  margin-top: 160px;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
 
 }
 
-.terms >h1
+.terms > h1
 {
   font-size: 3rem;
  
 }
+
+.terms >h2
+{
+  font-size: 2em;
+  text-align: left;
+  font-weight: 500;
+ 
+}
+
+.terms > p
+{
+  font-size: 1.2em;
+  text-align: left;
+ 
+}
+
+
 
 
 
@@ -498,4 +597,4 @@ hr /*sin uso*/
       }
       
 
-      /***********************        END OF FONTS           **************************************/  
+
