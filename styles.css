@@ -216,15 +216,14 @@ h2
 
 /************Services and About us styles**********************/
 
-/********flex container for Services and About us cards**********/
-.flex-container
+.flex-container /* flex container for Services and About us cards */
 {
     display: flex;
-  /*  flex-wrap: wrap;*/
+   /* flex-wrap: wrap;*/
     justify-content: center;
     margin-top: 95px;
     margin-bottom: 95px;
-    gap: 1%px;
+    gap: 1%;
     margin-left: 10%;
     margin-right: 10%;   
 }
@@ -245,17 +244,62 @@ h2
     border-radius: 10px;
 }
 
-.service-card
+/*****************************Services responsive styles ***************************/
+/* Services Big screen view */
+@media all and (min-width: 1500px)
 {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    width: 40%;
+    .services-container
+    {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+      width: 40%;
+    }
 }
 
+/*  Services Medium screen view */
 
+@media (min-width:992px) and (max-width:1499px)
+{
+    .services-container
+    {
+      flex-wrap: nowrap;
+    }
+ 
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0.1;
+      flex-basis: 200px;
+      width: 40%;
+    }
+}
 
-/* Big screen view */
+/*  Services  Mobile view */
+@media (max-width: 992px) 
+{
+    .services-container
+    {   
+      flex-direction: column;   
+    }
+
+    .service-card
+    {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+      width: 90%;
+    }
+}
+
+/*****************************About us responsive styles ***************************/
+/* Why us Big screen view */
 @media all and (min-width: 1500px)
 {
     .about-us-container
@@ -273,17 +317,14 @@ h2
     }
 }
 
-/* Medium screen view */
-
+/*  Why us Medium screen view */
 @media (min-width:1200px) and (max-width:1500px)
 {
   .about-us-container
   {
-     flex-wrap: nowrap;
-   
-   
+    flex-wrap: nowrap;
   }
-
+ 
   .about-card
   {
     flex-grow: 1;
@@ -291,17 +332,14 @@ h2
     flex-basis: 200px;
     width: 40%;
   }
-
 }
 
-
-/* Mobile view */
+/*  Why us  Mobile view */
 @media (max-width: 1119px) 
 {
   .about-us-container
   {
     flex-wrap: wrap;
-      
   }
 
   .about-card
@@ -311,7 +349,6 @@ h2
     flex-basis: 200px;
     width: 40%;
   }
-
 }
 
 .card > p
@@ -331,6 +368,53 @@ h2
 .about-card > p
 {
   font-size: 1.3em;
+}
+
+/*****************************Languages section styles ***************************/
+.lang-container
+{
+  display: flex;
+  overflow: auto;
+  flex-flow: row wrap;
+  padding: 5% 10% 5% 10%;
+  width: 50%;
+  margin:0% auto 0% auto;
+ justify-content: center;
+  align-items: center;
+}
+
+    /* For tablets: */
+@media (min-width: 768px) {
+  #lang-container {
+    width: 70%; 
+  }
+}
+
+/* For desktop: */
+@media (min-width: 1024px) {
+  #lang-container {
+    width: 80%; 
+  }
+
+  /*for 4k screens*/
+  @media (min-width: 2560px) {
+    #lang-container {
+      width: 50%; 
+    }
+  }
+}
+
+.language
+{
+  margin:6px;
+  border: solid 1px #B861FF;
+  width: 200px;
+  border-radius: 3px;
+  background: #382646;
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 1.1em;
+
 }
 
 
@@ -371,6 +455,7 @@ h2
   display: flex;
   justify-content: center;
 }
+
 /***********Mobile view*************/
 @media (max-width: 600px) 
 {
@@ -388,9 +473,14 @@ h2
 
 
 
+
+
+
+
+
+
+
 /***********************************/
-
-
 
 hr /*sin uso*/
 {
@@ -400,57 +490,9 @@ hr /*sin uso*/
   border-width: 1px;
 }
 
-   
-
 /***********************************************/
 
-    #lang-container
-    {
-      display: flex;
-      overflow: auto;
-      flex-flow: row wrap;
-      padding: 5% 10% 5% 10%;
-      width: 50%;
-      margin:0% auto 0% auto;
-     justify-content: center;
-      align-items: center;
-      
-      
-    }
-
-        /* For tablets: */
-    @media (min-width: 768px) {
-      #lang-container {
-        width: 70%; 
-      }
-    }
-    
-    /* For desktop: */
-    @media (min-width: 1024px) {
-      #lang-container {
-        width: 80%; 
-      }
-
-      /*for 4k screens*/
-      @media (min-width: 2560px) {
-        #lang-container {
-          width: 50%; 
-        }
-      }
-    }
-
-    .language
-    {
-      margin:6px;
-      border: solid 1px #B861FF;
-      width: 200px;
-      border-radius: 3px;
-      background: #382646;
-      padding: 10px 10px;
-      text-align: left;
-      font-size: 1.1em;
-
-    }
+   
    
 
 
@@ -496,6 +538,11 @@ hr /*sin uso*/
   height: 24px;
   margin: 10px;
 }
+
+
+
+
+
 
 
 .terms
@@ -553,4 +600,4 @@ hr /*sin uso*/
       }
       
 
-      /***********************        END OF FONTS           **************************************/  
+
