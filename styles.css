@@ -111,6 +111,7 @@ h2
     {
       height: 6px;
       -webkit-filter: blur(5px);
+      filter: blur(5px);
       border-radius: 5px;
     }
 
@@ -245,6 +246,33 @@ h2
     border-radius: 10px;
 }
 
+.card-header
+{
+    display: flex;
+    align-items: center;
+    /*width: 260px;*/
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-title
+{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.serviceIcon
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    /*float: left;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+}
+
+
 /*****************************Services responsive styles ***************************/
 /* Services Big screen view */
 @media all and (min-width: 1500px)
@@ -357,14 +385,7 @@ h2
     font-size: 1.2em;
 }
 
-.serviceIcon
-{
-    width: 50px;
-    float: left;
-    margin-right: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 .about-card > p
 {
@@ -453,42 +474,7 @@ h2
     {
         justify-content: center;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-/***********************************/
-
-hr /*sin uso*/
-{
-  border-style: solid none none;
-  border-color: #8E6FFF;
-  width: 40%;
-  border-width: 1px;
-}
-
-/***********************************************/
-
-   
-   
-
-
-   
-
-
-  
-  
-   
-
-    
 
 .social-link
 {
