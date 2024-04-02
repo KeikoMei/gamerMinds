@@ -87,6 +87,13 @@ footer a:hover
     color: #B861FF;
 }
 
+.hidden
+ {
+    display: none;
+  }
+
+
+
 /***************Mobile footer*****************/
 @media (max-width: 600px) 
 {
