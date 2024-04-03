@@ -1,3 +1,5 @@
+/************Navigation bar behaviour ******************/
+
 const toggle = document.querySelector(".toggle");
 
 const menu = document.querySelector(".menu");
@@ -44,3 +46,17 @@ menuItems.forEach(item => {
 });
 
 
+/**************************************************************/
+/*Attibutions div behaviour*/
+
+document.getElementById('attr-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    var attrLinks = document.getElementById('attr-links');
+    if (attrLinks.classList.contains('hidden')) {
+        attrLinks.classList.remove('hidden');
+        attrLinks.scrollIntoView({behavior: "smooth"});
+    } else {
+        attrLinks.classList.add('hidden');
+    }
+  });
+  
