@@ -68,12 +68,12 @@ h2
 {
     h2
     {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .summary
     {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
@@ -196,18 +196,21 @@ h2
 {
   #hero-section > h1
   {
-      font-size: 5rem;
+      font-size: 4.5rem;
   }
   
   #hero-section > h2
   {
-      font-size: 2.2rem;
+      font-size: 2rem;
+      line-height: 1.5em;
   }
   
   #hero-section > p
   {
-      font-size: 1.4em;
+      font-size: 1.3em;
       font-weight: 450;
+      margin-left: 0;
+      margin-right: 0;
   }
   
   .gamer
@@ -272,6 +275,15 @@ h2
     /*margin-bottom: 20px;*/
 }
 
+.service-card > p
+{
+    font-size: 1.2em;
+}
+
+.about-card > p
+{
+    font-size: 1.3em;
+}
 
 /*****************************Services responsive styles ***************************/
 /* Services Big screen view */
@@ -378,18 +390,11 @@ h2
     flex-basis: 200px;
     width: 40%;
   }
-}
 
-.card > p
-{
+  .about-card > p
+  {
     font-size: 1.2em;
-}
-
-
-
-.about-card > p
-{
-  font-size: 1.3em;
+  }
 }
 
 /*****************************Languages section styles ***************************/
@@ -458,8 +463,34 @@ h2
 
 .social-container
 {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-container img
+{
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+.social-container a 
+{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.social-link
+{
+  color:#B861FF;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+
+.social-link:hover
+{
+  text-decoration: underline;
 }
 
 /***********Mobile view*************/
@@ -476,76 +507,7 @@ h2
     }
 }
 
-.social-link
-{
-  color:#B861FF;
-  font-size: 1.7em;
-  text-decoration: none;
- 
-}
-
-.social-link:hover
-{
-  text-decoration: underline;
-}
-
-
-.social-container {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.social-container a {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  
-}
-
-.social-container img {
-  width: 24px;
-  height: 24px;
-  margin: 10px;
-}
-
-/*************Terms page styles****************/
-.terms
-{
-  margin-top: 160px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-
-}
-
-.terms > h1
-{
-  font-size: 3rem;
- 
-}
-
-.terms >h2
-{
-  font-size: 2em;
-  text-align: left;
-  font-weight: 500;
- 
-}
-
-.terms > p
-{
-  font-size: 1.2em;
-  text-align: left;
- 
-}
-
-
-
-
-
-    /***********************        FONTS           **************************************/
+/***********************        FONTS           **************************************/
     .athiti-extralight {
         font-family: "Athiti", sans-serif;
         font-weight: 200;
@@ -581,6 +543,3 @@ h2
         font-weight: 700;
         font-style: normal;
       }
-      
-
-
